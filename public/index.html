@@ -1,43 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="Favicon.png">
+  <title>Qwkdoc</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <img src="images/QwkdocLogo.svg" alt="logo"/>
+      <nav>
+        <ul class="header-nav-list">
+          <li><a>Home</a></li>
+          <li class="aboutLink"><a>About</a></li>
+          <li class="featuresLink"><a>Features</a></li>
+          <li class="contactUsLink"><a>Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <section class="main-section" id="home">
+    <div class="main-section-container">
+      <h1 class="main-title">Onboarding <span class="main-title-span"></span> Simplified</h1>
+      <h2 class="main-subtitle">Easy customer experiences</h2>
+      <div class="main-button-wrapper">
+        <img class="main-button-image" alt="button" src="images/elements/buttonElement.svg"/>
+        <button class="button mainBookDemo">Book a Demo</button>
+      </div>
+      <div class="main-info-block">
+        <div class="main-image-wrapper">
+          <img class="main-image-small" alt="border" src="images/elements/mainImageElement.svg"/>
+          <img class="main-image" src="images/MainSectionImage.svg" alt="example picture">
+        </div>
+        <div class="main-info-item main-info-item-first">
+          <img src="images/icons/spider.svg" alt="spider">
+          <span class="main-info-item-text">Remove the scarey from your process </span>
+        </div>
+        <div class="main-info-item main-info-item-second">
+          <img src="images/icons/rocket.svg" alt="hands">
+          <span class="main-info-item-text">Speed up on <br />boarding by 70%</span>
+        </div>
+        <div class="main-info-item main-info-item-third">
+          <img src="images/icons/hands.svg" alt="shine">
+          <span class="main-info-item-text">Customer Focused <br />Experience</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="titles-block">
+        <h2 class="title">Simple Steps. <br/> Quickly Finished</h2>
+        <p class="subtitle">Give your customers the painless experience they crave with our simple user <br /> experience process that takes the pain out of on boarding complicated information.</p>
+      </div>
+      <div class="features-items">
+        <img class="features-item-image" alt="star" src="images/elements/starElement.svg"/>
+        <article class="features-item-white">
+          <img class="features-item-icon" src="images/icons/checkMark.svg" alt="checkMark"/>
+          <h5 class="features-item-title">Clear Objectives</h5>
+          <p class="features-item-text">Your customers will feel no stress as they fly through the information you need to collect.</p>
+        </article>
+        <article class="features-item-green">
+          <img class="features-item-icon" src="images/icons/puzzle.svg" alt="checkMark"/>
+          <h5 class="features-item-title">Backend Data matching</h5>
+          <p class="features-item-text">We match our collected data into your legal documentation.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <section class="find-out-section">
+    <div class="find-out-container">
+      <div class="find-out-info-block">
+        <h2 class="find-out-title">Let’s Find Out</p>
+        <p class="find-out-subtitle">How fast can your customers hand over <br /> the information you need?</p>
+        <button class="find-out-button bookDemo">Book a demo</button>
+      </div>
+      <div class="find-out-video"></div>
+    </div>
+  </section>
+
+  <section class="technologies-section">
+    <div class="container technologies-container">
+      <img src="images/technologiesLogos/LogoYardi.svg" alt="logo">
+      <img src="images/technologiesLogos/LogoOpensan.svg" alt="logo">
+      <img src="images/technologiesLogos/LogoDemadaco.svg" alt="logo">
+      <img src="images/technologiesLogos/LogoIat.svg" alt="logo">
+      <img src="images/technologiesLogos/LogoDad.svg" alt="logo">
+      <img src="images/technologiesLogos/LogoWeddel.svg" alt="logo">
+    </div>
+  </section>
+
+  <section class="contact-us-section" id="contactUs">
+    <div class="contact-us-container">
+      <div class="contact-us-text-block">
+        <h3 class="contact-us-title">Book <br /> A Demo!</h3>
+        <p class="contact-us-subtitle">We would love to show you how amazing your customers experience could be.</p>
+      </div>
+      <div class="contact-us-form">
+        <div id="root"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-first-row">
+        <div class="footer-first-row-first-block">
+          <div class="footer-logo-wrapper">
+            <a href="/"><img src="images/QwkdocLogo.svg"></a>
+          </div>
+          <p class="footer-text-light">© 2023 Qwkdoc. All rights reserved.</p>
+        </div>
+        <div class="footer-first-row-second-block">
+          <h4 class="footer-title">MENU</h4>
+          <div class="footer-social-media-items">
+            <div class="footer-social-media-item">
+              <a class="footer-text homeLink">Home</a>
+              <a class="footer-text aboutLink">About</a>
+            </div>
+            <div class="footer-social-media-item">
+              <a class="footer-text featuresLink">Features</a>
+              <a class="footer-text contactUsLink">Book a demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-first-row-third-block">
+          <h4 class="footer-title">Social profiles</h4>
+          <div class="footer-social-media-items">
+            <div class="footer-social-media-item">
+              <a class="footer-text">Instagram</a>
+              <a class="footer-text">Facebook</a>
+            </div>
+            <div class="footer-social-media-item">
+              <a class="footer-text">Linkedin</a>
+              <a class="footer-text">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
